@@ -1,4 +1,4 @@
-package com.example.tes1;
+package com.example.oddscalc;
 
 import java.math.BigDecimal;
 import java.util.StringTokenizer;

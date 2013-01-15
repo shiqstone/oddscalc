@@ -1,4 +1,4 @@
-package com.example.tes1;
+package com.example.oddscalc;
 
 import android.app.Activity;
 import android.content.Intent;
