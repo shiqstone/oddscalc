@@ -1,58 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-
-    <TextView
-        android:id="@+id/textViewJczq0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:text="输入赔率连乘公式(最多不超过8个赔率)" />
-        
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="none" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jczq_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
     
-    <Button
-        android:id="@+id/buttonCalc0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="58dp"
-        android:text="计算" />
+    <TextView android:id="@+id/jczq_label" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="选择过关方式：" />
     
-    <TextView
-        android:id="@+id/textViewJczq1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:text="输入赔率连乘结果" />
-
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" />
+    <Spinner  android:id="@+id/jczq_spinner_1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:drawSelectorOnTop="false"
+	   android:layout_below="@id/jczq_label" />
+  
     
-    <Button
+    <TextView android:id="@+id/jczq_label1" 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_below="@+id/jczq_spinner_1" 
+		android:text="输入赔率：" />
+    
+    <!-- 1*1 -->
+    <EditText android:id="@+id/jczq_entry1" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:layout_below="@id/jczq_label1" />
+    
+    <!-- 2*1 -->
+     <TextView android:id="@+id/jczq_label2" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@id/jczq_label1"
+		android:layout_toRightOf="@+id/jczq_entry1" 
+		android:text="*" />
+
+	<EditText android:id="@+id/jczq_entry2" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@id/jczq_label1"
+		android:layout_toRightOf="@id/jczq_label2" />
+	
+	<!-- 3*1 -->
+	<TextView android:id="@+id/jczq_label3" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@id/jczq_label1"
+		android:layout_toRightOf="@+id/jczq_entry2" 
+		android:text="*" />
+
+	<EditText android:id="@+id/jczq_entry3" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@id/jczq_label1"
+		android:layout_toRightOf="@id/jczq_label3" />
+	
+	<!-- 4*1 -->
+	<TextView android:id="@+id/jczq_label4" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@id/jczq_label1"
+		android:layout_toRightOf="@+id/jczq_entry3" 
+		android:text="*" />
+
+	<EditText android:id="@+id/jczq_entry4" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@id/jczq_label1"
+		android:layout_toRightOf="@id/jczq_label4" />
+	
+	<!-- 5*1 -->
+	<TextView android:id="@+id/jczq_label5" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@id/jczq_label1"
+		android:layout_toRightOf="@+id/jczq_entry5"
+		android:text="*" />
+
+	<EditText android:id="@+id/jczq_entry5" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@+id/jczq_entry1" />
+	
+	<!-- 6*1 -->
+	<TextView android:id="@+id/jczq_label6" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@+id/jczq_entry1"
+		android:layout_toRightOf="@id/jczq_entry5"
+		android:text="*" />
+
+	<EditText android:id="@+id/jczq_entry6" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@+id/jczq_entry1"
+		android:layout_toRightOf="@id/jczq_label6" />
+	
+	<!-- 7*1 -->
+	<TextView android:id="@+id/jczq_label7" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@+id/jczq_entry1"
+		android:layout_toRightOf="@id/jczq_entry6"
+		android:text="*" />
+
+	<EditText android:id="@+id/jczq_entry7" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@+id/jczq_entry1"
+		android:layout_toRightOf="@id/jczq_label7" />
+	
+	<!-- 8*1 -->
+	<TextView android:id="@+id/jczq_label8" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@+id/jczq_entry1"
+		android:layout_toRightOf="@id/jczq_entry7"
+		android:text="*" />
+
+	<EditText android:id="@+id/jczq_entry8" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@+id/jczq_entry1"
+		android:layout_toRightOf="@id/jczq_label8" />
+	
+	<!-- multi -->
+	<TextView android:id="@+id/jczq_label_multi" 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_below="@+id/jczq_entry5"
+		android:text="倍数(最多99)" />
+
+	<EditText android:id="@+id/jczq_entry_multi" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="number"
+		android:text="1"
+		android:layout_below="@+id/jczq_entry5"
+		android:layout_toRightOf="@id/jczq_label_multi" />
+	<Button
         android:id="@+id/buttonCalc1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="58dp"
+        android:layout_below="@+id/jczq_entry_multi"
         android:text="计算" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textViewRes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
+        android:layout_below="@+id/buttonCalc1"
         android:text="" />
-
-</LinearLayout>
+</RelativeLayout>

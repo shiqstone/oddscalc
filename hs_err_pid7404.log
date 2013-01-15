@@ -1,0 +1,109 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3174), pid=7404, tid=7588
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_20-b02
+# Java VM: Java HotSpot(TM) Client VM (16.3-b01 mixed mode windows-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x016c9400):  JavaThread "Unknown thread" [_thread_in_vm, id=7588, stack(0x000c0000,0x00110000)]
+
+Stack: [0x000c0000,0x00110000],  sp=0x0010f880,  free space=13e0010f890k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1f4180]
+V  [jvm.dll+0xa1e29]
+V  [jvm.dll+0x74a41]
+V  [jvm.dll+0x760e4]
+V  [jvm.dll+0x1c26a5]
+V  [jvm.dll+0x1c2ddd]
+V  [jvm.dll+0x1c3195]
+V  [jvm.dll+0x1c31db]
+V  [jvm.dll+0x1c3302]
+V  [jvm.dll+0x1c337a]
+V  [jvm.dll+0x1c382d]
+V  [jvm.dll+0x1c3c32]
+V  [jvm.dll+0x1e40b3]
+V  [jvm.dll+0x1e448c]
+V  [jvm.dll+0xd89c1]
+V  [jvm.dll+0x1ddcd8]
+V  [jvm.dll+0x102e10]
+C  [javaw.exe+0x1657]
+C  [javaw.exe+0x1e2c]
+C  [javaw.exe+0x8614]
+C  [kernel32.dll+0x51114]
+C  [ntdll.dll+0x5b299]
+C  [ntdll.dll+0x5b26c]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x016c9400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7588, stack(0x000c0000,0x00110000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	D:\Program Files\Java\jdk1.6.0_20\bin\javaw.exe
+0x76ef0000 - 0x7702c000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76620000 - 0x766f4000 	C:\Windows\system32\kernel32.dll
+0x75060000 - 0x750aa000 	C:\Windows\system32\KERNELBASE.dll
+0x76700000 - 0x767a0000 	C:\Windows\system32\ADVAPI32.dll
+0x76900000 - 0x769ac000 	C:\Windows\system32\msvcrt.dll
+0x77060000 - 0x77079000 	C:\Windows\SYSTEM32\sechost.dll
+0x76b90000 - 0x76c31000 	C:\Windows\system32\RPCRT4.dll
+0x76830000 - 0x768f9000 	C:\Windows\system32\USER32.dll
+0x76350000 - 0x7639e000 	C:\Windows\system32\GDI32.dll
+0x77110000 - 0x7711a000 	C:\Windows\system32\LPK.dll
+0x751e0000 - 0x7527d000 	C:\Windows\system32\USP10.dll
+0x770f0000 - 0x7710f000 	C:\Windows\system32\IMM32.DLL
+0x76ac0000 - 0x76b8c000 	C:\Windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	D:\Program Files\Java\jdk1.6.0_20\jre\bin\msvcr71.dll
+0x6d8b0000 - 0x6db47000 	D:\Program Files\Java\jdk1.6.0_20\jre\bin\client\jvm.dll
+0x74df0000 - 0x74e22000 	C:\Windows\system32\WINMM.dll
+0x74c60000 - 0x74cab000 	C:\Windows\system32\apphelp.dll
+0x6d860000 - 0x6d86c000 	D:\Program Files\Java\jdk1.6.0_20\jre\bin\verify.dll
+0x6d3e0000 - 0x6d3ff000 	D:\Program Files\Java\jdk1.6.0_20\jre\bin\java.dll
+0x6d340000 - 0x6d348000 	D:\Program Files\Java\jdk1.6.0_20\jre\bin\hpi.dll
+0x751d0000 - 0x751d5000 	C:\Windows\system32\PSAPI.DLL
+0x6d430000 - 0x6d459000 	D:\Program Files\Java\jdk1.6.0_20\jre\bin\jdwp.dll
+0x6d750000 - 0x6d756000 	D:\Program Files\Java\jdk1.6.0_20\jre\bin\npt.dll
+0x6d8a0000 - 0x6d8af000 	D:\Program Files\Java\jdk1.6.0_20\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:50625 -Dfile.encoding=GBK -Xbootclasspath:F:\adt-bundle-windows-x86\sdk\platforms\android-17\android.jar 
+java_command: com.example.tes1.OddsCalc
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Program Files\Java\jdk1.6.0_20
+PATH=D:\Program Files\Java\jdk1.6.0_20\jre\bin;D:/Program Files/Java/jre6/bin/client;D:/Program Files/Java/jre6/bin;D:/Program Files/Java/jre6/lib/i386;C:\Program Files\Common Files\Microsoft Shared\Windows Live;D:\oracle\product\11.2.0\dbhome_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\Intel\DMIX;D:\apache-maven-2.0.11\bin;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\Broadcom\WHL\;D:\Program Files\TortoiseSVN\bin;C:\Program Files\Windows Live\Shared;d:\Program Files\StormII\Codec;d:\Program Files\StormII;E:\software\UltraEdit\;F:\adt-bundle-windows-x86\eclipse;
+USERNAME=ben
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 37 Stepping 2, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7600 
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 37 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 3067584k(401368k free), swap 6133404k(2293016k free)
+
+vm_info: Java HotSpot(TM) Client VM (16.3-b01) for windows-x86 JRE (1.6.0_20-b02), built on Apr 12 2010 13:52:23 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Tue Jan 15 22:00:44 2013
+elapsed time: 0 seconds
+

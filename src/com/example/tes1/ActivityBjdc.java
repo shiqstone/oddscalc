@@ -49,11 +49,13 @@ public class ActivityBjdc extends Activity {
 
 		spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
+			@Override
 			public void onItemSelected(AdapterView<?> arg0, View arg1,
 					int arg2, long arg3) {
 				showEntries(arg2);
 			}
 
+			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {
 				Log.e("klkl", "klkl");
 
@@ -142,6 +144,7 @@ public class ActivityBjdc extends Activity {
 	}
 	
 	private Button.OnClickListener listener0 = new Button.OnClickListener(){
+		@Override
 		public void onClick(View v){
 			EditText etext = null;
 			etext = (EditText) findViewById(R.id.bjdc_entry1);

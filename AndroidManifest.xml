@@ -31,6 +31,9 @@
 		<activity android:name=".ActivityBjdc"
 			android:label="北京单场赔率估算">
 		</activity>
+		<activity android:name=".ActivityLab"
+			android:label="车库实验室">
+		</activity>
     </application>
 
 </manifest>

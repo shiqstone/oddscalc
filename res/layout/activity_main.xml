@@ -33,12 +33,13 @@
         android:text="竞彩篮球" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textview2lab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2jczq"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2jclq"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="58dp"
         android:text="竞彩奖金估算" />
 
 </RelativeLayout>
