@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bjdc_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView android:id="@+id/bjdc_label" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="选择过关方式：" />
+    
+    <Spinner  android:id="@+id/bjdc_spinner_1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:drawSelectorOnTop="false"
+	   android:layout_below="@id/bjdc_label" />
+  
+    
+    <TextView android:id="@+id/bjdc_label1" 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_below="@+id/bjdc_spinner_1" 
+		android:text="输入赔率：" />
+    
+    <!-- 1*1 -->
+    <EditText android:id="@+id/bjdc_entry1" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:layout_below="@id/bjdc_label1" />
+    
+    <!-- 2*1 -->
+     <TextView android:id="@+id/bjdc_label2" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@id/bjdc_label1"
+		android:layout_toRightOf="@+id/bjdc_entry1" 
+		android:text="*" />
+
+	<EditText android:id="@+id/bjdc_entry2" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@id/bjdc_label1"
+		android:layout_toRightOf="@id/bjdc_label2" />
+	
+	<!-- 3*1 -->
+	<TextView android:id="@+id/bjdc_label3" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@id/bjdc_label1"
+		android:layout_toRightOf="@+id/bjdc_entry2" 
+		android:text="*" />
+
+	<EditText android:id="@+id/bjdc_entry3" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@id/bjdc_label1"
+		android:layout_toRightOf="@id/bjdc_label3" />
+	
+	<!-- 4*1 -->
+	<TextView android:id="@+id/bjdc_label4" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@id/bjdc_label1"
+		android:layout_toRightOf="@+id/bjdc_entry3" 
+		android:text="*" />
+
+	<EditText android:id="@+id/bjdc_entry4" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@id/bjdc_label1"
+		android:layout_toRightOf="@id/bjdc_label4" />
+	
+	<!-- 5*1 -->
+	<TextView android:id="@+id/bjdc_label5" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@id/bjdc_label1"
+		android:layout_toRightOf="@+id/bjdc_entry5"
+		android:text="*" />
+
+	<EditText android:id="@+id/bjdc_entry5" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@+id/bjdc_entry1" />
+	
+	<!-- 6*1 -->
+	<TextView android:id="@+id/bjdc_label6" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@+id/bjdc_entry1"
+		android:layout_toRightOf="@id/bjdc_entry5"
+		android:text="*" />
+
+	<EditText android:id="@+id/bjdc_entry6" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@+id/bjdc_entry1"
+		android:layout_toRightOf="@id/bjdc_label6" />
+	
+	<!-- 7*1 -->
+	<TextView android:id="@+id/bjdc_label7" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@+id/bjdc_entry1"
+		android:layout_toRightOf="@id/bjdc_entry6"
+		android:text="*" />
+
+	<EditText android:id="@+id/bjdc_entry7" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@+id/bjdc_entry1"
+		android:layout_toRightOf="@id/bjdc_label7" />
+	
+	<!-- 8*1 -->
+	<TextView android:id="@+id/bjdc_label8" 
+        android:layout_width="10dp"
+		android:layout_height="wrap_content" 
+		android:visibility="invisible"
+		android:layout_below="@+id/bjdc_entry1"
+		android:layout_toRightOf="@id/bjdc_entry7"
+		android:text="*" />
+
+	<EditText android:id="@+id/bjdc_entry8" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="numberDecimal"
+		android:visibility="invisible"
+		android:layout_below="@+id/bjdc_entry1"
+		android:layout_toRightOf="@id/bjdc_label8" />
+	
+	<!-- multi -->
+	<TextView android:id="@+id/bjdc_label_multi" 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_below="@+id/bjdc_entry5"
+		android:text="倍数(最多99)" />
+
+	<EditText android:id="@+id/bjdc_entry_multi" 
+        android:layout_width="70dp"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:inputType="number"
+		android:text="1"
+		android:layout_below="@+id/bjdc_entry5"
+		android:layout_toRightOf="@id/bjdc_label_multi" />
+	<Button
+        android:id="@+id/buttonCalc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bjdc_entry_multi"
+        android:text="计算" />
+
+    <TextView
+        android:id="@+id/textViewRes_bjdc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/buttonCalc1"
+        android:text="" />
+</RelativeLayout>

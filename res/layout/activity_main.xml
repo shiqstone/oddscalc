@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button2jczq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="62dp"
+        android:text="竞彩足球" />
+
+    <Button
+        android:id="@+id/button2bjdc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2jczq"
+        android:layout_marginLeft="58dp"
+        android:text="北京单场" />
+
+    <Button
+        android:id="@+id/button2jclq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2bjdc"
+        android:layout_marginLeft="58dp"
+        android:text="竞彩篮球" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2jczq"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        android:text="竞彩奖金估算" />
+
+</RelativeLayout>
